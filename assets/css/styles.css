@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background, #000);
+    color: var(--foreground, #333);
+    position: relative;
+}
+
+/* Text Logo */
+.text-logo {
+    position: absolute;
+    top: -2rem;
+    left: 1rem;
+    font-size: 1.875rem; /* 3xl */
+    font-weight: 700; /* Bold */
+    color: var(--primary, #fff);
+    z-index: 10;
+}
+
+/* Container */
+.container {
+    padding: 1.5rem; /* 6 */
+    background-color: #ffffff; /* White */
+    border-radius: 0.75rem; /* xl */
+    max-width: 64rem; /* max-w-4xl */
+    margin: 3rem auto 0; /* Centered with spacing from top */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Logo */
+.logo img {
+    max-width: 10%;
+    border-radius: 30px;
+    margin-bottom: 1rem; /* mb-4 */
+
+}
+
+/* Heading */
+h1 {
+    font-size: 3.75rem; /* 6xl */
+    font-weight: 700; /* Bold */
+    color: var(--primary, #000);
+    text-align: center;
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+/* Info Text */
+.info {
+    font-size: 1.125rem; /* lg */
+    color: var(--muted-foreground, #7e7e7e);
+    text-align: center;
+    margin-bottom: 1.5rem; /* mb-6 */
+}
+
+/* Ratings */
+.ratings {
+    text-align: center;
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+.ratings span {
+    font-size: 1rem; /* Base */
+    font-weight: 500; /* Medium */
+}
+
+.ratings .text-yellow-400 {
+    color: #C7920F; /* Custom Yellow */
+    font-size: 1.25rem; /* xl */
+    font-weight: 600; /* Semibold */
+}
+
+/* App Stats - Vertical Column */
+.stats-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Add spacing between items */
+    margin-bottom: 1.5rem; /* Space below the stats */
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.stat-item span {
+    font-size: 1.125rem; /* lg */
+    font-weight: 500; /* Medium */
+    color: var(--foreground, #333);
+}
+
+.rating {
+    font-size: 1.25rem; /* xl */
+    font-weight: 700; /* Bold */
+    color: var(--primary, #155407);
+}
+.divider-vertical {
+    width: 1px; /* Thickness of the line */
+    height: 60px; /* Adjust height as needed */
+    background-color: var(--muted-foreground, #d3d3d3); /* Line color */
+}
+
+.reviews,
+.downloads,
+.age-rating {
+    font-size: 1rem; /* Base */
+    font-weight: 600; /* Semibold */
+    color: var(--muted-foreground, #7e7e7e);
+}
+
+/* Downloads and Age Rating */
+.downloads,
+.age-rating,
+.category {
+    font-size: 1rem; /* Base */
+    color: var(--muted-foreground, #7e7e7e);
+    text-align: center;
+    margin-bottom: 0.5rem; /* Adjust spacing */
+}
+
+/* Download Button */
+.download-button {
+    display: block;
+    background-color: var(--primary, #155407);
+    color: #ffffff; /* White */
+    padding: 0.5rem 1.25rem; /* py-2 px-5 */
+    border-radius: 0.375rem; /* md */
+    font-size: 1rem; /* Base */
+    font-weight: 600; /* Semibold */
+    text-align: center;
+    margin: 0 auto; /* Centered */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* No underline */
+}
+
+.download-button:hover {
+    background-color: rgba(21, 84, 7, 0.8); /* Slightly darker on hover */
+}
+
+/* Desktop Message */
+.desktop-message {
+    text-align: center;
+    font-size: 1rem; /* Base */
+    color: var(--muted-foreground, #7e7e7e);
+    margin-top: 1.5rem; /* mt-6 */
+}
+
+/* Screenshot Gallery */
+.screenshot-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem; /* gap-5 */
+    margin-top: 2rem; /* mt-8 */
+}
+
+.screenshot-gallery img {
+    width: 100%;
+    max-width: 32%; /* Adjust for three columns */
+    border-radius: 0.375rem; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}

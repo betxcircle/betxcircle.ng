@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Huntgame</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="bg-background relative">
+
+    <!-- Text Logo -->
+    <div class="text-logo absolute top-4 left-4 text-3xl font-bold text-primary">
+        Odinbet 
+    </div>
+
+    <div class="container p-6 bg-white rounded-xl max-w-4xl mx-auto mt-12">
+        <!-- Huntgame Logo -->
+        <div class="logo text-center">
+            <img src="assets/images/hero/ Logodin .png" alt="Odinbet Logo" class="logo-img"> <!-- Replace with actual logo path -->
+        </div>
+
+        <!-- App Information -->
+        <h1 class="text-6xl font-bold text-primary text-center mb-4">Odinbet: Chat, MeetUp, Games</h1>
+        <p class="info text-lg text-muted-foreground text-center mb-6">Odinbet: Chat, Meetup, Games.</p>
+
+        <!-- Ratings and Reviews -->
+        <!-- App Stats -->
+    <div class="stats-column">
+        <div class="stat-item">
+            <span class="rating">4.5</span>
+            <span class="reviews">6.5k Reviews</span>
+        </div>
+        <div class="divider-vertical"></div> <!-- Divider line -->
+        <div class="stat-item">
+            <span class="downloads">200k+</span>
+            <span>Downloads</span>
+        </div>
+        <div class="divider-vertical"></div> <!-- Divider line -->
+        <div class="stat-item">
+            <span class="age-rating">18+</span>
+            <span>Rated 18y+</span>
+        </div>
+    </div>
+        <!-- Download Button (only for mobile devices) -->
+        <button class="download-button bg-primary text-white py-2 px-5 rounded-md text-lg font-semibold hover:bg-primary/80 transition-all"
+            id="downloadBtn" onclick="window.location.href='download-link'">Download Huntgame</button>
+
+        <!-- Message for Desktop Users -->
+        <p class="desktop-message text-center text-lg text-muted-foreground mt-6" id="desktopMessage">App is not available for download on desktop.</p>
+
+        <!-- Huntgame Screenshots -->
+        <div class="screenshot-gallery flex flex-wrap justify-center gap-5 mt-8">
+            <img src="assets/images/hero/welcome.png" alt="Screenshot 1" class="rounded-lg w-full md:w-1/3"> <!-- Replace with actual screenshot paths -->
+            <img src="assets/images/hero/chatscreenshot.png" alt="Screenshot 2" class="rounded-lg w-full md:w-1/3">
+            <img src="assets/images/hero/walletscreenshot.png" alt="Screenshot 3" class="rounded-lg w-full md:w-1/3">
+        </div>
+    </div>
+
+    <script>
+        // Function to detect if the user is on a mobile device
+        function isMobile() {
+            return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+        }
+
+        // Show/Hide elements based on the device type
+        if (isMobile()) {
+            document.getElementById('downloadBtn').style.display = 'block';  // Show download button
+            document.getElementById('desktopMessage').style.display = 'none';  // Hide desktop message
+        } else {
+            document.getElementById('downloadBtn').style.display = 'none';  // Hide download button
+            document.getElementById('desktopMessage').style.display = 'block';  // Show desktop message
+        }
+    </script>
+
+</body>
+
+</html>
+
+
