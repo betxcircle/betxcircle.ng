@@ -111,7 +111,7 @@
                         <h1 class="wow fadeInLeft" data-wow-delay=".4s">Risk.Reward.Repeat.</h1>
                         <p class="wow fadeInLeft" data-wow-delay=".6s">Prove your skills and take the prize.</p>
                        <div class="button wow fadeInLeft" data-wow-delay=".8s">
-    <a href="javascript:void(0)" class="btn"><i class="lni lni-apple"></i> App Store</a>
+    <a href="javascript:void(0)" class="btn" id="appStoreBtn"><i class="lni lni-apple"></i> App Store</a>
     <a href="download.html" class="btn btn-alt" id="playStoreBtn">
         <i class="lni lni-play-store"></i> Google Play
     </a>
@@ -220,12 +220,10 @@
       if (!isAndroid()) {
           // Option 1: Hide the button if not Android
           playStoreBtn.style.display = "none";
-
-          // Option 2: Show an alert if clicked (instead of hiding)
-          // playStoreBtn.addEventListener("click", function (event) {
-          //     event.preventDefault();
-          //     alert("Device not compatible");
-          // });
+      }
+      if (isAndroid()) {
+          // Option 1: Hide the button if not Android
+          appStoreBtn.style.display = "none";
       }
   });
 </script>
